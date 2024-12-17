@@ -27,7 +27,7 @@
 
           <li class="nav-item">
             <a href="{{ route('categories.index') }}" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="nav-icon fa fa-layer-group"></i>
               <p>
                 Loại tài sản
               </p>
@@ -35,9 +35,57 @@
           </li>
           <li class="nav-item">
             <a href="{{ route('locations.index') }}" class="nav-link">
-              <i class="nav-icon fas fa-warehouse"></i>
+              <i class="nav-icon fa fa-home"></i>
               <p>
                 Kho chứa tài sản
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ route('locations.index') }}" class="nav-link">
+              <i class="nav-icon fa fa-list"></i>
+              <p>
+                Danh sách tài sản
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ route('locations.index') }}" class="nav-link">
+              <i class="nav-icon fa fa-exchange-alt"></i>
+              <p>
+                Bàn giao
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ route('locations.index') }}" class="nav-link">
+              <i class="nav-icon fa fa-undo"></i>
+              <p>
+                Thu hồi
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ route('locations.index') }}" class="nav-link">
+              <i class="nav-icon fa fa-shopping-cart"></i>
+              <p>
+                Thanh lý
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ route('locations.index') }}" class="nav-link">
+              <i class="nav-icon fa fa-chart-bar"></i>
+              <p>
+                Báo cáo
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ route('locations.index') }}" class="nav-link">
+              <i class="nav-icon fa fa-users"></i>
+              <p>
+                Quản lý người dùng
               </p>
             </a>
           </li>

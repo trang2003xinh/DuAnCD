@@ -10,13 +10,13 @@ class LocationController extends Controller
     public function index(Request $request){
 
         $locations = Location::all();
-        return view('locations.index', compact('locations'));
+        return view('admin.locations.index', compact('locations'));
     }
 
     // Thêm - Create - C
     public function create(Request $request)
     {
-        return view('locations.create');
+        return view('admin.locations.create');
     }
 
     //luu thong tin
@@ -36,7 +36,7 @@ class LocationController extends Controller
     {
         //tìm category theo id
         $location = Location::find($id);
-        return view('locations.edit', compact('location'));
+        return view('admin.locations.edit', compact('location'));
     }
 
     public function update(Request $request, $id)

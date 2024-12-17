@@ -14,13 +14,13 @@ class CategoryController extends Controller
     public function index(Request $request)
     {
         $categories = Category::all();
-        return view('category.index', compact('categories')); // Tìm đến index.blade.php trong thư mục views
+        return view('admin.category.index', compact('categories')); // Tìm đến index.blade.php trong thư mục views
     }
 
     // Thêm - Create - C
     public function create(Request $request)
     {
-        return view('category.create');
+        return view('admin.category.create');
     }
 
     //luu thong tin
@@ -44,7 +44,7 @@ class CategoryController extends Controller
     {
         //tìm category theo id
         $category = Category::find($id);
-        return view('category.edit', compact('category'));
+        return view('admin.category.edit', compact('category'));
     }
 
     public function update(Request $request, $id)
