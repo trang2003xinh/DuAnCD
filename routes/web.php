@@ -4,6 +4,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\LocationController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AdminAssetController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,6 +42,15 @@ Route::prefix('admin')->group(function () {
         Route::get('/{id}/edit', [LocationController::class, 'edit'])->name('locations.edit');
         Route::post('/{id}', [LocationController::class, 'update'])->name('locations.update');
         Route::get('/{id}', [LocationController::class, 'delete'])->name('locations.delete');
+    });
+    //asset
+    Route::prefix('assets')->group(function () {
+        Route::get('/', [AdminAssetController::class, 'index'])->name('assets.index');
+        // Route::get('/create', [LocationController::class, 'create'])->name('locations.create');
+        // Route::post('/', [LocationController::class, 'store'])->name('locations.store');
+        // Route::get('/{id}/edit', [LocationController::class, 'edit'])->name('locations.edit');
+        // Route::post('/{id}', [LocationController::class, 'update'])->name('locations.update');
+        // Route::get('/{id}', [LocationController::class, 'delete'])->name('locations.delete');
     });
 });
 
